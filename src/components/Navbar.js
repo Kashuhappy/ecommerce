@@ -4,15 +4,16 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Container = styled.div`
-    height: 50px;
+    height: 60px;
 `
 
 const Wrapper = styled.div`
-    padding: 10px 20px;
+    padding: 0px 20px;
     display:flex;
     align-items: center;
     justify-content: space-between;
 `
+
 const Right = styled.div`
     flex: 1;
     display: flex;
@@ -44,7 +45,7 @@ const Left = styled.div`
 `
 const Logo = styled.h1`
     font-weight: bold;
-    margin-left: 50px;
+    margin-left: 10px;
 `
 
 const Navbar = () => {
@@ -63,7 +64,7 @@ const Navbar = () => {
         <MenuItem>Register</MenuItem>
         <MenuItem>Sign up</MenuItem>
         <MenuItem>
-        <Badge badgeContent={1} color="primary">
+        <Badge badgeContent={1} color="secondary">
           <ShoppingCartOutlined />
         </Badge>
         </MenuItem>
