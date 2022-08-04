@@ -17,6 +17,7 @@ const Right = styled.div`
     flex: 1;
     display: flex;
     align-items: center;
+    justify-content: flex-end;
 `
 const Language = styled.span`
     font-size: 14px;
@@ -35,6 +36,7 @@ const Input = styled.input`
 const MenuItem = styled.div`
     font-size: 14;
     cursor: pointer;
+    margin-left: 25px;
 `
 
 const Left = styled.div`
@@ -56,12 +58,12 @@ const Navbar = () => {
         <Language>EN</Language>
         <SearchContainer>
           <Input/>
-          <Search/>
+          <Search style={{color:'gray', fontSize:14}}/>
         </SearchContainer>
         <MenuItem>Register</MenuItem>
         <MenuItem>Sign up</MenuItem>
         <MenuItem>
-        <Badge badgeContent={4} color="primary">
+        <Badge badgeContent={1} color="primary">
           <ShoppingCartOutlined />
         </Badge>
         </MenuItem>
