@@ -42,12 +42,14 @@ const MenuItem = styled.div`
     margin-left: 25px;
 `
 const Button = styled.button`
-    border-radius: 50;
+    border-radius: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 20px;
     font-weight: bold;
+    background-color: #ff8d72;
+    border-color: #ff8d72;
 `
 //  badgeContent={1} == badge
 
@@ -75,7 +77,7 @@ const Navbar = () => {
         <MenuItem style={{color: "white"}}>Register</MenuItem>
         <MenuItem style={{color: "white"}}>Sign up</MenuItem>
         <MenuItem>
-        <Button>BUY NOW<Badge overlap="rectangular" color="secondary"> 
+        <Button >BUY NOW<Badge overlap="rectangular" color="secondary"> 
           <ShoppingCartOutlined />
         </Badge></Button>
         </MenuItem>
