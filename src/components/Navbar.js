@@ -50,6 +50,7 @@ const Button = styled.button`
     font-weight: bold;
     background-color: #ff8d72;
     border-color: #ff8d72;
+    cursor: pointer;
 `
 //  badgeContent={1} == badge
 
