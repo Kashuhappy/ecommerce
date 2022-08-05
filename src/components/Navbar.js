@@ -6,6 +6,7 @@ import styled from 'styled-components'
 const Container = styled.div`
     height: 40px;
     padding-bottom: 35px;
+    background-color: #171941;
 `
 
 const Wrapper = styled.div`
@@ -63,16 +64,16 @@ const Navbar = () => {
     <Container>
       <Wrapper>
       <Left>
-        <Logo>HNK</Logo>
+        <Logo style={{color: "white"}}>HNK</Logo>
       </Left>
       <Right>
-        <Language>EN</Language>
+        <Language style={{color: "white"}}>EN</Language>
         <SearchContainer>
           <Input/>
           <Search style={{color:'gray', fontSize:14}}/>
         </SearchContainer>
-        <MenuItem>Register</MenuItem>
-        <MenuItem>Sign up</MenuItem>
+        <MenuItem style={{color: "white"}}>Register</MenuItem>
+        <MenuItem style={{color: "white"}}>Sign up</MenuItem>
         <MenuItem>
         <Button>BUY NOW<Badge overlap="rectangular" color="secondary"> 
           <ShoppingCartOutlined />
