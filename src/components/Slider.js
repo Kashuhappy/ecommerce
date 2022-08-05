@@ -54,7 +54,7 @@ const Slider = () => {
         </Arrow>
         <Wrapper>
             <ImgContainer>
-            <Image src="images/Images.png"/>
+            <Image src="images/Image.png"/>
             </ImgContainer>
             <InfoContainer></InfoContainer>
         </Wrapper>
