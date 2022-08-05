@@ -10,6 +10,7 @@ const Container = styled.div`
     align-items: center;
     font-size: 14;
     font-weight: 500;
+    length:100%;
 `
 
 const Announcements = () => {

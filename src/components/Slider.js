@@ -6,9 +6,11 @@ const Container = styled.div`
     height: 100vh;
     width: 100%;
     display: flex;
-    padding: 20px;
-    background-color: magenta;
+    padding-left: 16px;
+    background-color: pink;
     position: relative;
+    overflow: auto; 
+    length: auto;
 `
 const Arrow = styled.div`
     width: 50px;
@@ -29,6 +31,7 @@ const Arrow = styled.div`
 `
 const Wrapper = styled.div`
     height: 100%;
+    display: flex;
 `
 const Slide = styled.div`
     width: 100vw;
@@ -50,18 +53,50 @@ const InfoContainer = styled.div`
     padding: 50px;
 `
 
+const Title = styled.h1`
+    font-size: 70px;
+`
+const Desc = styled.p`
+    margin: 50px 0px;
+    font-size: 20px;
+    font-weight: 500;
+    left-spacing: 3px;
+`
+const Button = styled.button`
+    padding: 10px;
+    font-size: 20px;
+    background-color: transparent;
+    cursor: pointer;
+
+`
+
+
 const Slider = () => {
   return (
-    <Container>
+    <Container className='slider'>
         <Arrow direction = "left">
             <ArrowLeftOutlined/>
         </Arrow>
         <Wrapper>
             <Slide>
             <ImgContainer>
-            <Image src="images/Image.png"/>
+            <Image src="./images/Home.png" alt=""/>
             </ImgContainer>
-            <InfoContainer></InfoContainer>
+            <InfoContainer>
+                <Title>SUMMER SAL</Title>
+                <Desc>DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS</Desc>
+                <Button>SHOP NOW</Button>
+            </InfoContainer>
+            </Slide>
+            <Slide>
+            <ImgContainer>
+            <Image src="./images/Home.png" alt=""/>
+            </ImgContainer>
+            <InfoContainer>
+                <Title>SUMMER SAL</Title>
+                <Desc>DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS</Desc>
+                <Button>SHOP NOW</Button>
+            </InfoContainer>
             </Slide>
         </Wrapper>
         <Arrow direction = "right">
