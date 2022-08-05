@@ -30,20 +30,24 @@ const Arrow = styled.div`
 const Wrapper = styled.div`
     height: 100%;
 `
-// const Slide = styled.div`
-//     display: flex;
-//     align-items: center;
-// `
+const Slide = styled.div`
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+`
 
 const ImgContainer = styled.div`
+    height: 100%;
     flex: 1;
 `
 const Image = styled.img`
-
+    height: 80%;
 `
 
 const InfoContainer = styled.div`
     flex: 1;
+    padding: 50px;
 `
 
 const Slider = () => {
@@ -53,10 +57,12 @@ const Slider = () => {
             <ArrowLeftOutlined/>
         </Arrow>
         <Wrapper>
+            <Slide>
             <ImgContainer>
             <Image src="images/Image.png"/>
             </ImgContainer>
             <InfoContainer></InfoContainer>
+            </Slide>
         </Wrapper>
         <Arrow direction = "right">
             <ArrowRightOutlined/>
