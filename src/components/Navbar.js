@@ -40,6 +40,15 @@ const MenuItem = styled.div`
     cursor: pointer;
     margin-left: 25px;
 `
+const Button = styled.button`
+    border-radius: 50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    font-weight: bold;
+`
+//  badgeContent={1} == badge
 
 const Left = styled.div`
     flex: 1;
@@ -65,9 +74,9 @@ const Navbar = () => {
         <MenuItem>Register</MenuItem>
         <MenuItem>Sign up</MenuItem>
         <MenuItem>
-        <Badge badgeContent={1} color="secondary">
+        <Button>BUY NOW<Badge color="secondary"> 
           <ShoppingCartOutlined />
-        </Badge>
+        </Badge></Button>
         </MenuItem>
       </Right>
       </Wrapper>
