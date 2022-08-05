@@ -1,4 +1,4 @@
-import { ArrowLeftOutlined, ArrowRightOutlined } from '@material-ui/icons'
+// import { ArrowLeftOutlined, ArrowRightOutlined } from '@material-ui/icons'
 import React from 'react'
 import styled from 'styled-components'
 
@@ -7,31 +7,30 @@ const Container = styled.div`
     width: 100%;
     display: flex;
     padding-left: 16px;
-    background-color: pink;
+    background-color: #171941;
     position: relative;
     overflow: auto; 
     length: auto;
 `
-const Arrow = styled.div`
-    width: 50px;
-    height: 50px;
-    background-color: rgb(250, 244, 244);
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    left: ${props => props.direction === "left" && "10px"};
-    right: ${props => props.direction === "right" && "10px"};
-    cursor: pointer;
-    opacity: 0.6;
-`
+// const Arrow = styled.div`
+//     width: 50px;
+//     height: 50px;
+//     background-color: rgb(250, 244, 244);
+//     border-radius: 50%;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     position: absolute;
+//     top: 0;
+//     bottom: 0;
+//     margin: auto;
+//     left: ${props => props.direction === "left" && "10px"};
+//     right: ${props => props.direction === "right" && "10px"};
+//     cursor: pointer;
+//     opacity: 0.6;
+// `
 const Wrapper = styled.div`
     height: 100%;
-    display: flex;
 `
 const Slide = styled.div`
     width: 100vw;
@@ -67,25 +66,25 @@ const Button = styled.button`
     font-size: 20px;
     background-color: transparent;
     cursor: pointer;
-
+    border-color: #ff8d72;
 `
 
 
 const Slider = () => {
   return (
-    <Container className='slider'>
-        <Arrow direction = "left">
+    <Container>
+        {/* <Arrow direction = "left">
             <ArrowLeftOutlined/>
-        </Arrow>
+        </Arrow> */}
         <Wrapper>
             <Slide>
             <ImgContainer>
             <Image src="./images/Home.png" alt=""/>
             </ImgContainer>
             <InfoContainer>
-                <Title>SUMMER SAL</Title>
-                <Desc>DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS</Desc>
-                <Button>SHOP NOW</Button>
+                <Title style={{color: "#ff8d72"}}>SUMMER SAL</Title>
+                <Desc style={{color: "white"}}>DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS</Desc>
+                <Button style={{color: "#ff8d72"}}>SHOP NOW</Button>
             </InfoContainer>
             </Slide>
             <Slide>
@@ -93,15 +92,15 @@ const Slider = () => {
             <Image src="./images/Home.png" alt=""/>
             </ImgContainer>
             <InfoContainer>
-                <Title>SUMMER SAL</Title>
-                <Desc>DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS</Desc>
-                <Button>SHOP NOW</Button>
+                <Title style={{color: "#ff8d72"}}>SUMMER SAL</Title>
+                <Desc style={{color: "white"}}>DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS</Desc>
+                <Button style={{color: "#ff8d72"}}>SHOP NOW</Button>
             </InfoContainer>
             </Slide>
         </Wrapper>
-        <Arrow direction = "right">
+        {/* <Arrow direction = "right">
             <ArrowRightOutlined/>
-        </Arrow>
+        </Arrow> */}
     </Container>
   )
 }
