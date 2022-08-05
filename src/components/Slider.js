@@ -89,7 +89,7 @@ const Slider = () => {
             </Slide>
             <Slide>
             <ImgContainer>
-            <Image src="./images/Home.png" alt=""/>
+            <Image src="./images/Home.png" alt="photo"/>
             </ImgContainer>
             <InfoContainer>
                 <Title style={{color: "#ff8d72"}}>SUMMER SAL</Title>
