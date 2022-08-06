@@ -28,6 +28,7 @@ const Container = styled.div`
 //     right: ${props => props.direction === "right" && "10px"};
 //     cursor: pointer;
 //     opacity: 0.6;
+//     z-index: 2;
 // `
 const Wrapper = styled.div`
     height: 100%;
@@ -82,7 +83,7 @@ const Slider = () => {
             <Image src="./images/image.png" alt="photo"/>
             </ImgContainer>
             <InfoContainer>
-                <Title style={{color: "#ff8d72"}}>SUMMER SAL</Title>
+                <Title style={{color: "#ff8d72"}}>SUMMER SALE</Title>
                 <Desc style={{color: "white"}}>DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS</Desc>
                 <Button style={{color: "#ff8d72"}}>SHOP NOW</Button>
             </InfoContainer>
@@ -92,7 +93,17 @@ const Slider = () => {
             <Image src="./images/image.png" alt="photo"/>
             </ImgContainer>
             <InfoContainer>
-                <Title style={{color: "#ff8d72"}}>SUMMER SAL</Title>
+                <Title style={{color: "#ff8d72"}}>WINTER SALE</Title>
+                <Desc style={{color: "white"}}>DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS</Desc>
+                <Button style={{color: "#ff8d72"}}>SHOP NOW</Button>
+            </InfoContainer>
+            </Slide>
+            <Slide>
+            <ImgContainer>
+            <Image src="./images/image.png" alt="photo"/>
+            </ImgContainer>
+            <InfoContainer>
+                <Title style={{color: "#ff8d72"}}>POPULAR SALE</Title>
                 <Desc style={{color: "white"}}>DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS</Desc>
                 <Button style={{color: "#ff8d72"}}>SHOP NOW</Button>
             </InfoContainer>
