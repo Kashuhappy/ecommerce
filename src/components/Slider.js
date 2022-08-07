@@ -1,6 +1,7 @@
 // import { ArrowLeftOutlined, ArrowRightOutlined } from '@material-ui/icons'
 import React from 'react'
 import styled from 'styled-components'
+import image from '../images/image.png'
 
 const Container = styled.div`
     height: 100vh;
@@ -80,7 +81,7 @@ const Slider = () => {
         <Wrapper>
             <Slide>
             <ImgContainer>
-            <Image src="./images/image.png" alt="photo"/>
+            <Image src={image} alt="photo"/>
             </ImgContainer>
             <InfoContainer>
                 <Title style={{color: "#ff8d72"}}>SUMMER SALE</Title>
