@@ -90,7 +90,7 @@ const Slider = () => {
             </Slide>
             <Slide>
             <ImgContainer>
-            <Image src="./images/image.png" alt="photo"/>
+            <Image src="./images/Shoe.jpg" alt="photo"/>
             </ImgContainer>
             <InfoContainer>
                 <Title style={{color: "#ff8d72"}}>WINTER SALE</Title>
