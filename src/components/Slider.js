@@ -80,7 +80,7 @@ const Slider = () => {
         <Wrapper>
             <Slide>
             <ImgContainer>
-            <Image src='./images/Shoe.jpg'alt="photo"/>
+            <Image src="https://i.ibb.co/RBZ6nwW/shoe3.png" alt="photo"/>
             </ImgContainer>
             <InfoContainer>
                 <Title style={{color: "#ff8d72"}}>SUMMER SALE</Title>
@@ -90,7 +90,7 @@ const Slider = () => {
             </Slide>
             <Slide>
             <ImgContainer>
-            <Image src="./images/Shoe.jpg" alt="photo"/>
+            <Image src="https://i.ibb.co/F5F9vcf/shoe.png" alt="photo"/>
             </ImgContainer>
             <InfoContainer>
                 <Title style={{color: "#ff8d72"}}>WINTER SALE</Title>
@@ -100,7 +100,7 @@ const Slider = () => {
             </Slide>
             <Slide>
             <ImgContainer>
-            <Image src="./images/Shoe.jpg" alt="photo"/>
+            <Image src="https://i.ibb.co/mN5Fvm7/shoe2.png" alt="photo"/>
             </ImgContainer>
             <InfoContainer>
                 <Title style={{color: "#ff8d72"}}>POPULAR SALE</Title>
