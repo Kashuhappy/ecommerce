@@ -1,6 +1,7 @@
 // import { ArrowLeftOutlined, ArrowRightOutlined } from '@material-ui/icons'
 import React from 'react'
 import styled from 'styled-components'
+import { sliderItems } from '../data'
 
 const Container = styled.div`
     height: 100vh;
@@ -78,36 +79,18 @@ const Slider = () => {
             <ArrowLeftOutlined/>
         </Arrow> */}
         <Wrapper>
-            <Slide>
-            <ImgContainer>
-            <Image src="https://i.ibb.co/RBZ6nwW/shoe3.png" alt="photo"/>
-            </ImgContainer>
-            <InfoContainer>
-                <Title style={{color: "#ff8d72"}}>SUMMER SALE</Title>
-                <Desc style={{color: "white"}}>DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS</Desc>
-                <Button style={{color: "#ff8d72"}}>SHOP NOW</Button>
-            </InfoContainer>
-            </Slide>
-            <Slide>
-            <ImgContainer>
-            <Image src="https://i.ibb.co/F5F9vcf/shoe.png" alt="photo"/>
-            </ImgContainer>
-            <InfoContainer>
-                <Title style={{color: "#ff8d72"}}>WINTER SALE</Title>
-                <Desc style={{color: "white"}}>DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS</Desc>
-                <Button style={{color: "#ff8d72"}}>SHOP NOW</Button>
-            </InfoContainer>
-            </Slide>
-            <Slide>
-            <ImgContainer>
-            <Image src="https://i.ibb.co/mN5Fvm7/shoe2.png" alt="photo"/>
-            </ImgContainer>
-            <InfoContainer>
-                <Title style={{color: "#ff8d72"}}>POPULAR SALE</Title>
-                <Desc style={{color: "white"}}>DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS</Desc>
-                <Button style={{color: "#ff8d72"}}>SHOP NOW</Button>
-            </InfoContainer>
-            </Slide>
+            {sliderItems.map(item=>(
+                <Slide>
+                <ImgContainer>
+                <Image src={item.img} alt={item.alt}/>
+                </ImgContainer>
+                <InfoContainer>
+                    <Title style={{color: "#ff8d72"}}>{item.title}</Title>
+                    <Desc style={{color: "white"}}>{item.desc}</Desc>
+                    <Button style={{color: "#ff8d72"}}>SHOP NOW</Button>
+                </InfoContainer>
+                </Slide>
+            ))}
         </Wrapper>
         {/* <Arrow direction = "right">
             <ArrowRightOutlined/>
