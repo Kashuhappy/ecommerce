@@ -61,6 +61,9 @@ const Left = styled.div`
 const Logo = styled.h1`
     font-weight: bold;
     margin-left: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
 `
 
 const Navbar = () => {
@@ -68,7 +71,7 @@ const Navbar = () => {
     <Container>
       <Wrapper>
       <Left>
-        <Logo style={{color: "white"}}>HNK</Logo>
+        <Logo style={{color: "white"}}><img src='https://i.ibb.co/Ryg7wT3/Logo.png' alt='logo'/>kSneakers</Logo>
       </Left>
       <Right>
         <Language style={{color: "white"}}>EN</Language>
