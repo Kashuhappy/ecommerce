@@ -5,7 +5,6 @@ import { sliderItems } from '../data'
 
 const Container = styled.div`
     height: 100vh;
-    width: 100%;
     display: flex;
     padding-left: 16px;
     background-color: #171941;
