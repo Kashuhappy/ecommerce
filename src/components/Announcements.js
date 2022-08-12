@@ -10,12 +10,14 @@ const Container = styled.div`
     align-items: center;
     font-size: 14;
     font-weight: 500;
-    length:100%;
+    length: 100%;
 `
 
 const Announcements = () => {
   return (
-    <Container>Super Deal! Free Shipping on Orders over $50</Container>
+    <Container>
+      Super Deal! Free Shipping on Orders over $50
+    </Container>
   )
 }
 
