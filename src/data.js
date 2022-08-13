@@ -29,12 +29,12 @@ export const categories = [
         title: "Low Tops Sneakers",
     },
     {
-        id: 1,
+        id: 2,
         img: "https://i.ibb.co/RBZ6nwW/shoe3.png",
         title: "Mid Tops Sneakers",
     },
     {
-        id: 1,
+        id: 3,
         img: "https://i.ibb.co/RBZ6nwW/shoe3.png",
         title: "High Tops Sneakers",
     }
