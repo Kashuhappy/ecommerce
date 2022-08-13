@@ -20,22 +20,65 @@ export const sliderItems = [
         title: "POPULAR SALE",
         desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS", 
     },
-]
+];
 
 export const categories = [
     {
         id: 1,
         img: "https://i.ibb.co/RBZ6nwW/shoe3.png",
-        title: "SUMMER SALE",
+        title: "Low Tops Sneakers",
     },
     {
         id: 1,
         img: "https://i.ibb.co/RBZ6nwW/shoe3.png",
-        title: "SUMMER SALE",
+        title: "Mid Tops Sneakers",
     },
     {
         id: 1,
         img: "https://i.ibb.co/RBZ6nwW/shoe3.png",
-        title: "SUMMER SALE",
+        title: "High Tops Sneakers",
     }
-]
+];
+
+export const popularProducts = [
+    {
+        id: 1,
+        img: "https://i.ibb.co/RBZ6nwW/shoe3.png",
+    },
+    {
+        id: 2,
+        img: "https://i.ibb.co/RBZ6nwW/shoe3.png",
+    },
+    {
+        id: 3,
+        img: "https://i.ibb.co/RBZ6nwW/shoe3.png",
+    },
+    {
+        id: 4,
+        img: "https://i.ibb.co/RBZ6nwW/shoe3.png",
+    },
+    {
+        id: 5,
+        img: "https://i.ibb.co/RBZ6nwW/shoe3.png",
+    },
+    {
+        id: 6,
+        img: "https://i.ibb.co/RBZ6nwW/shoe3.png",
+    },
+    {
+        id: 7,
+        img: "https://i.ibb.co/RBZ6nwW/shoe3.png",
+    },
+    {
+        id: 8,
+        img: "https://i.ibb.co/RBZ6nwW/shoe3.png",
+    },
+    {
+        id: 9,
+        img: "https://i.ibb.co/RBZ6nwW/shoe3.png",
+    },
+    {
+        id: 10,
+        img: "https://i.ibb.co/RBZ6nwW/shoe3.png",
+    },
+];
