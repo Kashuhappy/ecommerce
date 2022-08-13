@@ -1,39 +1,41 @@
-// import { ArrowLeftOutlined, ArrowRightOutlined } from '@material-ui/icons'
-import React from 'react'
+import { ArrowLeftOutlined, ArrowRightOutlined } from '@material-ui/icons'
+import React, { useState } from 'react'
 import styled from 'styled-components'
 import { sliderItems } from '../data'
 
 const Container = styled.div`
     height: 100vh;
+    width: 100%;
     display: flex;
-    padding-left: 16px;
     background-color: #171941;
     position: relative;
-    overflow: auto;
+    overflow: hidden;
 `;
 
-// const Arrow = styled.div`
-//     width: 50px;
-//     height: 50px;
-//     background-color: rgb(250, 244, 244);
-//     border-radius: 50%;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     position: absolute;
-//     top: 0;
-//     bottom: 0;
-//     margin: auto;
-//     left: ${props => props.direction === "left" && "10px"};
-//     right: ${props => props.direction === "right" && "10px"};
-//     cursor: pointer;
-//     opacity: 0.6;
-//     z-index: 2;
-// `
+const Arrow = styled.div`
+    width: 50px;
+    height: 50px;
+    background-color: rgb(250, 244, 244);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: ${(props) => props.direction === "left" && "10px"};
+    right: ${(props) => props.direction === "right" && "10px"};
+    cursor: pointer;
+    opacity: 0.6;
+    z-index: 2;
+`;
+
 const Wrapper = styled.div`
     height: 100%;
-    transition: all 1.5s ease;
     display: flex;
+    transition: all 1.5s ease;
+    transform: translateX(${(props)=>props.sliderItems * -100}vw);
 `;
 
 const Slide = styled.div`
@@ -65,7 +67,7 @@ const Desc = styled.p`
     margin: 50px 0px;
     font-size: 20px;
     font-weight: 500;
-    left-spacing: 3px;
+    letter-spacing: 3px;
 `;
 
 const Button = styled.button`
@@ -78,13 +80,21 @@ const Button = styled.button`
 
 
 const Slider = () => {
-  return (
+    const [slideIndex, setSlideIndex] = useState(0);
+    const handleClick = (direction) => {
+        if (direction === "left") {
+            setSlideIndex(slideIndex > 0 ? slideIndex - 1 : 2);
+        } else {
+            setSlideIndex(slideIndex < 2 ? slideIndex + 1 : 0);
+        }
+    };
+    return (
     <Container>
-        {/* <Arrow direction = "left">
+        <Arrow direction = "left" onClick={() => handleClick("left")}>
             <ArrowLeftOutlined/>
-        </Arrow> */}
-        <Wrapper>
-            {sliderItems.map(item=>(
+        </Arrow>
+        <Wrapper slideIndex={slideIndex}>
+            {sliderItems.map((item) =>(
                 <Slide key={item.id}>
                 <ImgContainer>
                 <Image src={item.img} alt={item.alt}/>
@@ -97,9 +107,9 @@ const Slider = () => {
                 </Slide>
             ))}
         </Wrapper>
-        {/* <Arrow direction = "right">
+        <Arrow direction = "right" onClick={() => handleClick("right")}>
             <ArrowRightOutlined/>
-        </Arrow> */}
+        </Arrow>
     </Container>
   )
 }
