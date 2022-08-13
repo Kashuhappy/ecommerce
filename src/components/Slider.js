@@ -9,9 +9,9 @@ const Container = styled.div`
     padding-left: 16px;
     background-color: #171941;
     position: relative;
-    overflow: auto; 
-    length: auto;
+    overflow: auto;
 `
+
 // const Arrow = styled.div`
 //     width: 50px;
 //     height: 50px;
@@ -81,7 +81,7 @@ const Slider = () => {
         </Arrow> */}
         <Wrapper>
             {sliderItems.map(item=>(
-                <Slide>
+                <Slide item={item} key={item.id}>
                 <ImgContainer>
                 <Image src={item.img} alt={item.alt}/>
                 </ImgContainer>
