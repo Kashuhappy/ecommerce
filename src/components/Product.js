@@ -32,13 +32,13 @@ const Container = styled.div`
     }
 `;
 
-// const Circle = styled.div`
-//   width: 200px;
-//   height: 200px;
-//   border-radius: 50%;
-//   background-color: transparent;
-//   position: absolute;
-// `;
+const Circle = styled.div`
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: transparent;
+  position: absolute;
+`;
 
 const Image = styled.img`
     height: 75%;
@@ -56,16 +56,17 @@ const Icon = styled.div`
   justify-content: center;
   margin: 10px;
   transition: all 0.5s ease;
-
+  
   &:hover{
     background-color: aliceblue;
     transform: scale(1.1);
-  }
+}
 `;
 
 const Product = ({item}) => {
   return (
     <Container>
+      <Circle/>
         <Image src={item.img}/>
         <Info>
             <Icon>
@@ -83,3 +84,7 @@ const Product = ({item}) => {
 }
 
 export default Product
+
+// &:hover ${Info}{
+  //opacity: 1;
+//} 
