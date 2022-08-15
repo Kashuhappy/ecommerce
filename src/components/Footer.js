@@ -1,4 +1,4 @@
-import { Facebook, Instagram, Pinterest, Twitter } from '@material-ui/icons'
+import { Facebook, Instagram, MailOutlineOutlined, Phone, Pinterest, Room, Twitter } from '@material-ui/icons'
 import React from 'react'
 import styled from 'styled-components'
 
@@ -52,6 +52,13 @@ const Right = styled.div`
     flex: 1;
     padding: 20px;
 `
+const ContactItem = styled.div`
+
+`
+const Payment = styled.img`
+
+`
+
 const Footer = () => {
   return (
     <Container>
@@ -90,9 +97,16 @@ const Footer = () => {
         </Center>
         <Right>
             <Title>Contact Us</Title>
-            <ContactItem>625 Moyale Road, South D 6045</ContactItem>
-            <ContactItem>+123456789</ContactItem>
-            <ContactItem>sneakers@hnk.com</ContactItem>
+            <ContactItem>
+                <Room/> 625 Moyale Road, South D 6045
+            </ContactItem>
+            <ContactItem>
+                <Phone/> +123456789
+            </ContactItem>
+            <ContactItem>
+                <MailOutlineOutlined/> sneakers@hnk.com
+            </ContactItem>
+            <Payment src="https://i.ibb.co/F5F9vcf/shoe.png"/>
         </Right>
     </Container>
   )
