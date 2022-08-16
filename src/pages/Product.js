@@ -1,3 +1,4 @@
+import { Add, Remove } from '@material-ui/icons'
 import React from 'react'
 import styled from 'styled-components'
 import Announcements from '../components/Announcements'
@@ -63,10 +64,40 @@ const FilterSize = styled.select`
     margin-left: 10px;
     padding: 5px;
 `
-const FilterSizeOption = styled.option`
+const FilterSizeOption = styled.option``
 
+const AddContainer = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
 `
+const AmountContainer = styled.div`
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    cursor: pointer;
+`
+const Amount = styled.span`
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid #ff8d72;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 5px;
+`
+const Button = styled.button`
+    padding: 15px;
+    border: 1px solid #ff8d72;
+    cursor: pointer;
+    font-weight: 500;
 
+    &:hover{
+        background-color: #ff8d72;
+    }
+`
 const Product = () => {
   return (
     <Container>
@@ -78,9 +109,7 @@ const Product = () => {
             </ImgContainer>
             <InfoContainer>
                 <Title>Air Jordan 1</Title>
-                <Desc>apper functions can be used to write error checking routines for pre-existing system functions without increasing the length of a code by a large amount by repeating the same error check for each call to the function.[3] All calls to the original function can be replaced with calls to the wrapper, allowing the programmer to forget about error checking once the wrapper is written. A test driver is a kind of wrapper function that exercises a code module, typically calling it repeatedly, with different settings or parameters, in order to rigorously pursue each possible path. It is not deliverable code, but is not throwaway code either, being typically retained for use in regression testing. An interface adaptor is a kind of wrapper function that simplifies, tailors, or amplifies the interface to a code module, with the intent of making it more intelligible or relevant to the user. It may rename parameters, combine parameters, set defaults for parameters, and the like.
-
-</Desc>
+                <Desc>kdhncdcla;dmecrifnuwhnlwfirnfo</Desc>
                 <Price>$ 20</Price>
                 <FilterContainer>
                     <Filter>
@@ -99,6 +128,14 @@ const Product = () => {
                         </FilterSize>
                     </Filter>
                 </FilterContainer>
+                <AddContainer>
+                    <AmountContainer>
+                        <Remove/>
+                        <Amount>1</Amount>
+                        <Add/>
+                    </AmountContainer>
+                    <Button>ADD TO CART</Button>
+                </AddContainer>
             </InfoContainer>
         </Wrapper>
         <Newsletter/>
