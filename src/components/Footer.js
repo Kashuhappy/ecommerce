@@ -4,6 +4,8 @@ import styled from 'styled-components'
 
 const Container = styled.div`
     display: flex;
+    background-color: #171941;
+    color: white;
 `
 const Left = styled.div`
     flex: 1;
@@ -53,10 +55,12 @@ const Right = styled.div`
     padding: 20px;
 `
 const ContactItem = styled.div`
-
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
 `
 const Payment = styled.img`
-
+    width: 50%;
 `
 
 const Footer = () => {
@@ -98,15 +102,15 @@ const Footer = () => {
         <Right>
             <Title>Contact Us</Title>
             <ContactItem>
-                <Room/> 625 Moyale Road, South D 6045
+                <Room style={{marginRight: "10px"}}/> 625 Moyale Road, South D 6045
             </ContactItem>
             <ContactItem>
-                <Phone/> +123456789
+                <Phone style={{marginRight: "10px"}}/> +123456789
             </ContactItem>
             <ContactItem>
-                <MailOutlineOutlined/> sneakers@hnk.com
+                <MailOutlineOutlined style={{marginRight: "10px"}}/> sneakers@hnk.com
             </ContactItem>
-            <Payment src="https://i.ibb.co/F5F9vcf/shoe.png"/>
+            <Payment src="https://i.ibb.co/Qfvn4z6/payment.png"/>
         </Right>
     </Container>
   )
