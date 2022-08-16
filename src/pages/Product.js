@@ -109,7 +109,9 @@ const Product = () => {
             </ImgContainer>
             <InfoContainer>
                 <Title>Air Jordan 1</Title>
-                <Desc>kdhncdcla;dmecrifnuwhnlwfirnfo</Desc>
+                <Desc>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</Desc>
                 <Price>$ 20</Price>
                 <FilterContainer>
                     <Filter>
