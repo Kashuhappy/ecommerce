@@ -71,7 +71,7 @@ const Navbar = () => {
     <Container>
       <Wrapper>
       <Left>
-        <Logo onClick={() => window.location.reload(false)} style={{color: "white"}}><img src='https://i.ibb.co/Ryg7wT3/Logo.png' alt='logo'/>kSneakers</Logo>
+        <Logo title='Logo' onClick={() => window.location.reload(false)} style={{color: "white"}}><img src='https://i.ibb.co/Ryg7wT3/Logo.png' alt='logo'/>kSneakers</Logo>
       </Left>
       <Right>
         <Language style={{color: "white"}}>EN</Language>
