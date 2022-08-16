@@ -68,16 +68,16 @@ const Footer = () => {
                 Let's get in touch on any of these platforms.
             </Desc>
             <SocialContainer>
-                <SocialIcon color='E4405F'>
+                <SocialIcon color='E4405F' title='Instagram'>
                     <Instagram/>
                 </SocialIcon>
-                <SocialIcon color='E60023'>
+                <SocialIcon color='E60023' title='Pinterest'>
                     <Pinterest/>
                 </SocialIcon>
-                <SocialIcon color='55ACEE'> 
+                <SocialIcon color='55ACEE' title='Twitter'> 
                     <Twitter/>
                 </SocialIcon>
-                <SocialIcon color='3B5999'>
+                <SocialIcon color='3B5999' title='Facebook'>
                     <Facebook/>
                 </SocialIcon>
             </SocialContainer>
