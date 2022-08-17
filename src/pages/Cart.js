@@ -36,7 +36,14 @@ const TopText = styled.span`
     margin: 0px 10px;
 `
 const Bottom = styled.div`
-
+    display: flex;
+    justify-content: space-between;
+`
+const Info = styled.div`
+    flex: 3;
+`
+const Summary = styled.div`
+    flex: 1;
 `
 const Cart = () => {
   return (
@@ -53,7 +60,25 @@ const Cart = () => {
                 </TopTexts>
                 <TopButton type="filled">CHECKOUT NOW</TopButton>
             </Top>
-            <Bottom></Bottom>
+            <Bottom>
+                <Info>
+                    <Product>
+                        <ProductDetail>
+                            <Image src=''/>
+                            <Detais>
+                                <ProductName><b>PRODUCT:</b> AIR JORDAN 1</ProductName>
+                                <ProductId><b>ID:</b> 1234567890</ProductId>
+                                <ProductColor/>
+                                <ProductSize><b>Size:</b> 38</ProductSize>
+                            </Detais>
+                        </ProductDetail>
+                        <PriceDetail>
+                            Price
+                        </PriceDetail>
+                    </Product>
+                </Info>
+                <Summary>Summary</Summary>
+            </Bottom>
         </Wrapper>
         <Footer/>
     </Container>
