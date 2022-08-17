@@ -42,6 +42,24 @@ const Bottom = styled.div`
 const Info = styled.div`
     flex: 3;
 `
+const Product = styled.div`
+`
+const ProductDetail = styled.div`
+`
+const Image = styled.img`
+`
+const Details = styled.div`
+`
+const ProductName = styled.span`
+`
+const ProductId = styled.span`
+`
+const ProductColor = styled.div`
+`
+const ProductSize = styled.span`
+`
+const PriceDetail = styled.div`
+`
 const Summary = styled.div`
     flex: 1;
 `
@@ -64,13 +82,13 @@ const Cart = () => {
                 <Info>
                     <Product>
                         <ProductDetail>
-                            <Image src=''/>
-                            <Detais>
+                            <Image src='https://i.ibb.co/mN5Fvm7/shoe2.png'/>
+                            <Details>
                                 <ProductName><b>PRODUCT:</b> AIR JORDAN 1</ProductName>
                                 <ProductId><b>ID:</b> 1234567890</ProductId>
                                 <ProductColor/>
                                 <ProductSize><b>Size:</b> 38</ProductSize>
-                            </Detais>
+                            </Details>
                         </ProductDetail>
                         <PriceDetail>
                             Price
