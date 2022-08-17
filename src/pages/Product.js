@@ -63,7 +63,7 @@ const FilterColor = styled.div`
 const FilterSize = styled.select`
     margin-left: 10px;
     padding: 5px;
-`
+`;
 const FilterSizeOption = styled.option``
 
 const AddContainer = styled.div`
@@ -77,7 +77,7 @@ const AmountContainer = styled.div`
     align-items: center;
     font-weight: 700;
     cursor: pointer;
-`
+`;
 const Amount = styled.span`
     width: 30px;
     height: 30px;
@@ -87,7 +87,7 @@ const Amount = styled.span`
     align-items: center;
     justify-content: center;
     margin: 0px 5px;
-`
+`;
 const Button = styled.button`
     padding: 15px;
     border: 1px solid #ff8d72;
@@ -97,7 +97,7 @@ const Button = styled.button`
     &:hover{
         background-color: #ff8d72;
     }
-`
+`;
 const Product = () => {
   return (
     <Container>
@@ -146,4 +146,4 @@ const Product = () => {
   )
 }
 
-export default Product
+export default Product;
