@@ -2,11 +2,13 @@ import { Badge } from '@material-ui/core'
 import { Search, ShoppingCartOutlined } from '@material-ui/icons'
 import React from 'react'
 import styled from 'styled-components'
+import { mobile } from '../responsive'
 
 const Container = styled.div`
     height: 40px;
     padding-bottom: 50px;
     background-color: #171941;
+    ${mobile({height: "30px"})};
 `
 
 const Wrapper = styled.div`
@@ -21,6 +23,7 @@ const Right = styled.div`
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    ${mobile({flex: "2", justifyContent: "center"})};
 `
 const Language = styled.span`
     font-size: 14px;
@@ -36,11 +39,13 @@ const SearchContainer = styled.div`
 `
 const Input = styled.input`
     border: none;
+    ${mobile({width: "50px"})};
 `
 const MenuItem = styled.div`
-    font-size: 14;
+    font-size: 14px;
     cursor: pointer;
     margin-left: 25px;
+    ${mobile({fontSize: "12px", marginLeft: "10px"})};
 `
 const Button = styled.button`
     border-radius: 50px;
@@ -64,6 +69,7 @@ const Logo = styled.h1`
     display: flex;
     align-items: center;
     cursor: pointer;
+    ${mobile({display: "none"})};
 `
 
 const Navbar = () => {
@@ -76,7 +82,7 @@ const Navbar = () => {
       <Right>
         <Language style={{color: "white"}}>EN</Language>
         <SearchContainer>
-          <Input/>
+          <Input placeholder='Search'/>
           <Search style={{color:'gray', fontSize:14}}/>
         </SearchContainer>
         <MenuItem style={{color: "white"}}>Register</MenuItem>
