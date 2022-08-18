@@ -28,6 +28,7 @@ const Right = styled.div`
 const Language = styled.span`
     font-size: 14px;
     cursor: pointer;
+    ${mobile({display: "none"})}
 `
 const SearchContainer = styled.div`
     border: 1px solid lightgray;
@@ -80,7 +81,7 @@ const Navbar = () => {
         <Logo title='Logo' onClick={() => window.location.reload(false)} style={{color: "white"}}><img src='https://i.ibb.co/Ryg7wT3/Logo.png' alt='logo'/>kSneakers</Logo>
       </Left>
       <Right>
-        <Language style={{color: "white"}}>EN</Language>
+        <Language style={{color: "white"}} >EN</Language>
         <SearchContainer>
           <Input placeholder='Search'/>
           <Search style={{color:'gray', fontSize:14}}/>
