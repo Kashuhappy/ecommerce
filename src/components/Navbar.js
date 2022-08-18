@@ -40,7 +40,7 @@ const SearchContainer = styled.div`
 `
 const Input = styled.input`
     border: none;
-    ${mobile({width: "50px"})};
+    ${mobile({width: "90px"})};
 `
 const MenuItem = styled.div`
     font-size: 14px;
