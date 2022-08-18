@@ -26,6 +26,7 @@ const Info = styled.div`
 const Title = styled.h1`
   color: white;
   margin-bottom: 20px;
+  ${mobile({color: "#ff8d72"})};
 `
 const Button = styled.button`
     padding: 10px;
