@@ -47,7 +47,7 @@ export const popularProducts = [
     },
     {
         id: 2,
-        img: "https://i.ibb.co/RBZ6nwW/shoe3.png",
+        img: "https://i.ibb.co/mN5Fvm7/shoe2.png",
     },
     {
         id: 3,
