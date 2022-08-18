@@ -112,12 +112,18 @@ const SummaryItem = styled.div`
     display: flex;
     justify-content: space-between;
     font-weight: ${props => props.type === "total" && "700"};
-    font-size: ${props => props.type === "total" && "40"};
-    color: ${props => props.type === "total" && "#ff8d72"};
+    font-size: ${props => props.type === "total" && "24px"};
+    //color: ${props => props.type === "total" && "#ff8d72"};
 `
 const SummaryItemText = styled.span``
 const SummaryItemPrice = styled.span``
+
 const SummaryButton = styled.button`
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    font-weight: 600;
     cursor: pointer;
 `
 
