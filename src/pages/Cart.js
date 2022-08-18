@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import Navbar from '../components/Navbar'
 import Announcements from '../components/Announcements'
 import Footer from '../components/Footer'
+import { Add, Remove } from '@material-ui/icons'
 
 const Container = styled.div`
     background-color: #171941;
@@ -43,25 +44,62 @@ const Info = styled.div`
     flex: 3;
 `
 const Product = styled.div`
+    display: flex;
+    justify-content: space-between;
 `
+const Hr = styled.hr`
+    background-color: #eee;
+    height: 1px;
+    border: none;
+`
+
 const ProductDetail = styled.div`
+    flex: 2;
+    display: flex;
 `
 const Image = styled.img`
+    width: 200px;
 `
 const Details = styled.div`
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    justify-content: space-evenly;
 `
-const ProductName = styled.span`
-`
-const ProductId = styled.span`
-`
+const ProductName = styled.span``
+const ProductId = styled.span``
 const ProductColor = styled.div`
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: ${props => props.color};
 `
-const ProductSize = styled.span`
-`
+const ProductSize = styled.span``
 const PriceDetail = styled.div`
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 `
+const ProductAmountContainer = styled.div`
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+`
+const ProductAmount = styled.div`
+    font-size: 24px;
+    margin: 5px;
+`
+
+const ProductPrice = styled.div`
+    font-size: 30px;
+    font-weight: 200;
+`
+
 const Summary = styled.div`
     flex: 1;
+    display: flex;
 `
 const Cart = () => {
   return (
@@ -86,16 +124,46 @@ const Cart = () => {
                             <Details>
                                 <ProductName><b>PRODUCT:</b> AIR JORDAN 1</ProductName>
                                 <ProductId><b>ID:</b> 1234567890</ProductId>
-                                <ProductColor/>
+                                <ProductColor color='black'/>
                                 <ProductSize><b>Size:</b> 38</ProductSize>
                             </Details>
                         </ProductDetail>
                         <PriceDetail>
-                            Price
+                            <ProductAmountContainer>
+                                <Remove/>
+                                <ProductAmount>2</ProductAmount>
+                                <Add/>
+                            </ProductAmountContainer>
+                            <ProductPrice>$ 20</ProductPrice>
+                        </PriceDetail>
+                    </Product>
+                    <Hr/>
+                    <Product>
+                        <ProductDetail>
+                            <Image src='https://i.ibb.co/F5F9vcf/shoe.png'/>
+                            <Details>
+                                <ProductName><b>PRODUCT:</b> White Boots </ProductName>
+                                <ProductId><b>ID:</b> 0987654321 </ProductId>
+                                <ProductColor color='white'/>
+                                <ProductSize><b>Size:</b> 40 </ProductSize>
+                            </Details>
+                        </ProductDetail>
+                        <PriceDetail>
+                            <ProductAmountContainer>
+                                <Remove/>
+                                <ProductAmount>1</ProductAmount>
+                                <Add/>
+                            </ProductAmountContainer>
+                            <ProductPrice>$ 40</ProductPrice>
                         </PriceDetail>
                     </Product>
                 </Info>
-                <Summary>Summary</Summary>
+                <Summary>
+                    <SummaryTitle>ORDER SUMMARY</SummaryTitle>
+                    <SummartItem>
+                        <T
+                    </SummartItem>
+                </Summary>
             </Bottom>
         </Wrapper>
         <Footer/>
