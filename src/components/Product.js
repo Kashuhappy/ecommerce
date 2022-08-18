@@ -2,31 +2,8 @@ import { FavoriteBorderOutlined, SearchOutlined, ShoppingCartOutlined } from '@m
 import React from 'react'
 import styled from 'styled-components'
 
-const Container = styled.div`
-    flex: 1;
-    margin: 5px;
-    min-width: 280px;
-    height: 350px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-`;
-
-const Circle = styled.div`
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  background-color: transparent;
-  position: absolute;
-`;
-
-const Image = styled.img`
-    height: 75%;
-    z-index: 2;
-`;
-
 const Info = styled.div`
+  opacity: 0;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -41,8 +18,27 @@ const Info = styled.div`
   cursor: pointer;
 `;
 
+const Container = styled.div`
+    flex: 1;
+    margin: 5px;
+    min-width: 280px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #121438;
+    position: relative;
+    &:hover ${Info}{
+      opacity: 1;
+  } 
+`;
+
+const Image = styled.img`
+    height: 75%;
+    z-index: 2;
+`;
+
 const Icon = styled.div`
-  opacity: 0;
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -52,7 +48,6 @@ const Icon = styled.div`
   justify-content: center;
   margin: 10px;
   transition: all 0.5s ease;
-
   &:hover{
     background-color: aliceblue;
     transform: scale(1.1);
@@ -62,7 +57,6 @@ const Icon = styled.div`
 const Product = ({item}) => {
   return (
     <Container>
-      <Circle/>
         <Image src={item.img}/>
         <Info>
             <Icon>
@@ -81,9 +75,6 @@ const Product = ({item}) => {
 
 export default Product
 
-// &:hover ${Info}{ ... inside conatiner
-  //opacity: 1;
-//} 
 
 
 /* &:hover{
