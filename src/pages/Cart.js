@@ -99,8 +99,28 @@ const ProductPrice = styled.div`
 
 const Summary = styled.div`
     flex: 1;
-    display: flex;
+    border: 0.1px solid lightgray;
+    padding: 20px;
+    border-radius: 10px;
+    height: 50vh;
 `
+const SummaryTitle = styled.h1`
+    font-weight: 200;
+`
+const SummaryItem = styled.div`
+    margin: 30px 0px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: ${props => props.type === "total" && "700"};
+    font-size: ${props => props.type === "total" && "40"};
+    color: ${props => props.type === "total" && "#ff8d72"};
+`
+const SummaryItemText = styled.span``
+const SummaryItemPrice = styled.span``
+const SummaryButton = styled.button`
+    cursor: pointer;
+`
+
 const Cart = () => {
   return (
     <Container>
@@ -114,7 +134,7 @@ const Cart = () => {
                     <TopText>Shopping Bag (2)</TopText>
                     <TopText>Your Wishlist (0)</TopText>
                 </TopTexts>
-                <TopButton type="filled">CHECKOUT NOW</TopButton>
+                <TopButton type="filled">CHECKOUT</TopButton>
             </Top>
             <Bottom>
                 <Info>
@@ -160,9 +180,23 @@ const Cart = () => {
                 </Info>
                 <Summary>
                     <SummaryTitle>ORDER SUMMARY</SummaryTitle>
-                    <SummartItem>
-                        <T
-                    </SummartItem>
+                    <SummaryItem>
+                        <SummaryItemText>SubTotal</SummaryItemText>
+                        <SummaryItemPrice>$ 60</SummaryItemPrice>
+                    </SummaryItem>
+                    <SummaryItem>
+                        <SummaryItemText>Estimated shipping</SummaryItemText>
+                        <SummaryItemPrice>$ 5</SummaryItemPrice>
+                    </SummaryItem>
+                    <SummaryItem>
+                        <SummaryItemText>Shipping discount</SummaryItemText>
+                        <SummaryItemPrice>$ -5</SummaryItemPrice>
+                    </SummaryItem>
+                    <SummaryItem type="total">
+                        <SummaryItemText>Total</SummaryItemText>
+                        <SummaryItemPrice>$ 80</SummaryItemPrice>
+                    </SummaryItem>
+                    <SummaryButton>CHECKOUT NOW</SummaryButton>
                 </Summary>
             </Bottom>
         </Wrapper>
