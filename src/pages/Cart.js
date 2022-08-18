@@ -200,7 +200,7 @@ const Cart = () => {
                     </SummaryItem>
                     <SummaryItem type="total">
                         <SummaryItemText>Total</SummaryItemText>
-                        <SummaryItemPrice>$ 80</SummaryItemPrice>
+                        <SummaryItemPrice>$ 60</SummaryItemPrice>
                     </SummaryItem>
                     <SummaryButton>CHECKOUT NOW</SummaryButton>
                 </Summary>
