@@ -37,7 +37,7 @@ const Wrapper = styled.div`
     height: 100%;
     display: flex;
     transition: all 1.5s ease;
-    transform: translateX(${(props)=>props.sliderItems * -100}vw);
+    transform: translateX(${(props) => props.slideIndex * -100}vw);
 `;
 
 const Slide = styled.div`
@@ -96,10 +96,10 @@ const Slider = () => {
             <ArrowLeftOutlined/>
         </Arrow>
         <Wrapper slideIndex={slideIndex}>
-            {sliderItems.map((item) =>(
+            {sliderItems.map((item) => (
                 <Slide key={item.id}>
                 <ImgContainer>
-                <Image src={item.img} alt={item.alt}/>
+                    <Image src={item.img} alt={item.alt}/>
                 </ImgContainer>
                 <InfoContainer>
                     <Title style={{color: "#ff8d72"}}>{item.title}</Title>
