@@ -35,6 +35,7 @@ const Button = styled.button`
     color: gray;
     font-weight: 600;
     cursor: pointer;
+    ${mobile({color: "black"})};
 `;
 
 const CategoryItem = ({item}) => {
