@@ -48,7 +48,7 @@ const Newsletter = () => {
   return (
     <Container>
         <Title>Newsletter</Title>
-        <Desc>Get timely updates from your favorite sneakers.</Desc>
+        <Desc>Get timely updates from your favourite sneakers.</Desc>
         <InputContainer>
             <Input placeholder='Your email'/>
             <Button>
