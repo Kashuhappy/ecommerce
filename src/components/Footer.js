@@ -76,7 +76,7 @@ const Footer = () => {
   return (
     <Container>
         <Left>
-            <Logo><img src='https://i.ibb.co/Ryg7wT3/Logo.png' alt='logo'/>kSneakers</Logo>
+            <Logo><img src='https://i.ibb.co/Ryg7wT3/Logo.png' alt='logo'/>Sneakers</Logo>
             <Desc>
                 Let's get in touch on any of these platforms.
             </Desc>
