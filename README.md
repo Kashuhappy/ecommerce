@@ -1,4 +1,4 @@
 ### Ecommerce
-An ecommerce project for my Portfolio website
+An ecommerce project.
 
-![Alt text](Images/Home_page.png?raw=true "Title")
+![Alt text](Images/Home_page.png?raw=true "Home Page")
